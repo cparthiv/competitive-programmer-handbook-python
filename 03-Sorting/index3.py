@@ -22,6 +22,8 @@ arr = [1, 2, 2, 3, 5, 6, 8, 9]
 
 
 def binary_search(arr, elem, prim_index=0):
+    if len(arr) < 2:
+        return -1
     mid = int(len(arr) / 2)
     mid_elem = arr[mid]
     if mid_elem == elem:
